@@ -1,23 +1,23 @@
-# 🎋 こんにちは (Hello)! Welcome to my GitHub! 🌟
+# 🎋 Hei Hei! Welcome to my GitHub! 🌟
 
 ![Greeting GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3NsZHFyb2FwNHBtMHhpYXRzbnc5d2J1c21vdmJ5NDdwcGhmc29reCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QWkuGmMgphvmE/giphy.gif)
 
 ## 🌟 About Me
 
-🎓 I'm **Lidor**, an IT and Information Systems student at the **University of South-Eastern Norway (USN)**.  
-🌱 Currently, I'm learning and building my skills in **software development**, with a focus on **backend** and **full-stack technologies**.  
-💻 Passionate about learning new technologies, solving problems, and working on projects that can make a real difference.  
-📊 I have a strong interest in **data and databases**, and I'm excited to explore more their practical applications.  
-🤝 I enjoy collaborating and sharing knowledge as I continue to grow in the field!
+🎓 I'm **Lidor**, an **IT and Information Systems** student at the **University of South-Eastern Norway (USN)**.  
+🌱 Currently, I'm learning and building my skills in **software development**, with a particular interest in **backend** and **full-stack technologies**.  
+💻 I love getting **hands-on** with new tech and **problem-solving**.  
+📊 I'm very interested in **data and databases** and want to learn more about their use in real-world applications.  
+🤝 I enjoy collaborating and sharing knowledge!
 
 ---
 
 ## 🔭 What I'm Up To
 
-- 📚 Strengthening my knowledge in **software architecture** and **backend development**.  
-- 🛠️ Working on **personal and academic projects** to improve my problem-solving and coding skills.  
-- 🌐 Expanding my understanding of **web technologies** and **full-stack development**.  
-- 🚀 Exploring new tools and frameworks to stay up-to-date with the industry.
+- 📚 Diving deeper into **software architecture** and **backend development**.
+- 🛠️ Improving my **problem-solving** and **coding**.  
+- 🌐 Expanding my knowledge of **web technologies** and **full-stack development**.  
+- 🚀 Checking out new **tools** and **frameworks**.
 
 ---
 
