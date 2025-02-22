@@ -58,10 +58,9 @@
 
 ---
 
-## 📚 Currently Learning
+## 📚 Current Books & Courses
 
 - **"Full Stack Development with Spring Boot 3 and React"** by Juha Hinkula  
-- **"Full-Stack React with Spring Boot"** by Andy Olsen  
 - **"React - The Complete Guide"** by Maximilian Schwarzmüller, Academind GmbH  
 - **"Introduction to Java Programming and Data Structures"** by Yong Daniel Liang  
 
