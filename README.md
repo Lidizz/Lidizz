@@ -1,10 +1,10 @@
-# 🎋 Hei, and welcome to my GitHub!
+# 🎋 Hei, and welcome to my GitHub
 
 ![Greeting GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3NsZHFyb2FwNHBtMHhpYXRzbnc5d2J1c21vdmJ5NDdwcGhmc29reCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QWkuGmMgphvmE/giphy.gif)
 
 ## About Me
 
-I’m **Lidor**, an IT and Information Systems student at the University of South-Eastern Norway (USN). I’m into **software development**, especially backend and full-stack stuff, and I enjoy digging into code to solve problems. I’m keen on **data**, since how we use it can make or break things. I’m here to learn, build, and collaborate!
+I’m **Lidor**, an IT and Information Systems student at the University of South-Eastern Norway (USN). I’m into **software development**, especially backend and full-stack stuff, and I enjoy digging into code to solve problems. I’m keen on **data**, since how we use it can make or break things. I’m here to learn, build, and collaborate.
 
 🌱 **Learning:** Software architecture, backend dev, and full-stack tech.  
 💻 **Loves:** Hands-on coding and trying out new tools.  
