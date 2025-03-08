@@ -63,12 +63,6 @@ I’m **Lidor**, an IT and Information Systems student at the University of Sout
 
 ---
 
-## 📊 Stats
-
-![Lidor's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Lidizz&show_icons=true&theme=radical)
-
----
-
 ## Let’s Connect
 
 <p align="center">
