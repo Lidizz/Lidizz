@@ -6,18 +6,18 @@
 
 I’m **Lidor**, an IT and Information Systems student at the University of South-Eastern Norway (USN). I’m into **software development**, especially backend and full-stack stuff, and I enjoy digging into code to solve problems. I’m keen on **data**, since how we use it can make or break things. I’m here to learn, build, and collaborate!
 
-- 🌱 **Learning:** Software architecture, backend dev, and full-stack tech.  
-- 💻 **Loves:** Hands-on coding and trying out new tools.  
-- 🤝 **Vibe:** Teamwork and sharing what I know.
+🌱 **Learning:** Software architecture, backend dev, and full-stack tech.  
+💻 **Loves:** Hands-on coding and trying out new tools.  
+🤝 **Vibe:** Teamwork and sharing what I know.
 
 ---
 
 ## What I’m Working On
 
-- 🛠️ Building skills in **backend development** (Java, Spring, databases).  
-- 💡 Getting better at **problem-solving** through courses & projects.  
-- 🌐 Exploring **web tech** (React, JavaScript) for full-stack chops.  
-- 🚀 Playing with new frameworks and tools when I can.
+🛠️ Building skills in **backend development** (Java, Spring, databases).  
+💡 Getting better at **problem-solving** through courses & projects.  
+🌐 Exploring **web tech** (React, JavaScript) for full-stack chops.  
+🚀 Playing with new frameworks and tools when I can.
 
 ---
 
