@@ -15,7 +15,7 @@ I’m **Lidor**, an IT and Information Systems student at the University of Sout
 ## What I’m Working On
 
 - 🛠️ Building skills in **backend development** (Java, Spring, databases).  
-- 💡 Getting better at **problem-solving** through projects.  
+- 💡 Getting better at **problem-solving** through courses & projects.  
 - 🌐 Exploring **web tech** (React, JavaScript) for full-stack chops.  
 - 🚀 Playing with new frameworks and tools when I can.
 
