@@ -8,16 +8,16 @@ I’m **Lidor**, majoring in IT and Information Systems at the University of Sou
 
 🌱 **Learning:** Software architecture, backend dev, and full-stack tech  
 💻 **Loves:** Learning, hands-on coding and trying out new tools  
-🤝 **Vibe:** Teamwork and sharing what I know
+🤝 **Vibe:** Teamwork and sharing what I know  
 
 ---
 
 ## What I’m Working On
 
-🛠️ Building skills in **backend development**
+🛠️ Building skills in **backend development**  
 💡 Getting better at **problem-solving** through books, courses & projects  
 🌐 Exploring **web tech** for full-stack apps  
-🚀 Playing with new frameworks and tools when I can
+🚀 Playing with new frameworks and tools when I can  
 
 ---
 
