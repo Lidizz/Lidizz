@@ -4,7 +4,7 @@
 
 ## About Me
 
-I’m **Lidor**, majoring in IT and Information Systems at the University of South-Eastern Norway (USN). I’m into **software development**, especially backend and full-stack stuff, and I enjoy digging into code to solve problems. I’m keen on **data**, since how we use it can make or break things. I’m here to learn, build, and collaborate.
+I’m **Lidor**, majoring in IT and Information Systems at the University of South-Eastern Norway (USN). I’m into **software development**, especially backend and full-stack, and I enjoy digging into code to solve problems. I’m keen on **data**, since how we use it can make or break things. I’m here to learn, build, and collaborate.
 
 🌱 **Learning:** Software architecture, backend dev, and full-stack tech  
 💻 **Loves:** Learning, hands-on coding and trying out new tools  
@@ -14,9 +14,9 @@ I’m **Lidor**, majoring in IT and Information Systems at the University of Sou
 
 ## What I’m Working On
 
-🛠️ Building skills in **backend development** (Java, Spring, databases)  
+🛠️ Building skills in **backend development**
 💡 Getting better at **problem-solving** through books, courses & projects  
-🌐 Exploring **web tech** (React, JavaScript) for full-stack chops  
+🌐 Exploring **web tech** for full-stack apps  
 🚀 Playing with new frameworks and tools when I can
 
 ---
@@ -34,7 +34,7 @@ I’m **Lidor**, majoring in IT and Information Systems at the University of Sou
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="30" height="30" style="margin-right: 10px;" />
 </p>
 
-### Tools I Rely On
+### Tools I Use
 <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="30" height="30" style="margin-right: 10px;" />
@@ -57,7 +57,8 @@ I’m **Lidor**, majoring in IT and Information Systems at the University of Sou
 
 - **Books:**  
   - "Full Stack Development with Spring Boot 3 and React" (Juha Hinkula)  
-  - "Introduction to Java Programming and Data Structures" (Yong Daniel Liang)  
+  - "Introduction to Java Programming and Data Structures" (Yong Daniel Liang)
+  - "Algorithms, Fourth Edition" (Robert Sedgewick, Kevin Wayne)
 - **Courses:**  
   - "React - The Complete Guide" (Maximilian Schwarzmüller)  
 
