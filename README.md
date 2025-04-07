@@ -1,10 +1,10 @@
-# 🎋 Hei, and welcome to my GitHub
+# 🎋 Hei, welcome to my GitHub
 
 ![Greeting GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3NsZHFyb2FwNHBtMHhpYXRzbnc5d2J1c21vdmJ5NDdwcGhmc29reCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QWkuGmMgphvmE/giphy.gif)
 
 ## About Me
 
-I’m **Lidor**, majoring in IT and Information Systems at the University of South-Eastern Norway (USN). I’m into **software development**, especially backend and full-stack, and I enjoy digging into code to solve problems. I’m keen on **data**, since how we use it can make or break things. I’m here to learn, build, and collaborate.
+I’m **Lidor**, majoring in IT and Information Systems at the University of South-Eastern Norway (USN). I’m focused on **software development**, especially backend and full-stack. I'm also interested in **database design**, attempting to structure data effectively for reliability and performance. I’m here to learn, build, and collaborate.
 
 🌱 **Learning:** Software architecture, backend dev, and full-stack tech  
 💻 **Loves:** Learning, hands-on coding and trying out new tools  
@@ -75,6 +75,6 @@ I’m **Lidor**, majoring in IT and Information Systems at the University of Sou
 
 ---
 
-*Built by [Lidizz](https://github.com/Lidizz) with code and coffee ☕*
+*Built by [Lidizz](https://github.com/Lidizz) ☕*
 
 ---
