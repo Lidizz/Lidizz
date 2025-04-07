@@ -7,7 +7,7 @@
 I’m **Lidor**, majoring in IT and Information Systems at the University of South-Eastern Norway (USN). I’m focused on **software development**, especially backend and full-stack. I'm also interested in **database design**, attempting to structure data effectively for reliability and performance. I’m here to learn, build, and collaborate.
 
 🌱 **Learning:** Software architecture, backend dev, and full-stack tech  
-💻 **Loves:** Learning, hands-on coding and trying out new tools  
+💻 **Loves:** Learning, hands-on projects and trying out new tools  
 🤝 **Vibe:** Teamwork and sharing what I know  
 
 ---
