@@ -1,4 +1,4 @@
-# 🎋 Hei, welcome to my GitHub
+# 🎋 Hei, welcome to my GitHub!
 
 ![Greeting GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3NsZHFyb2FwNHBtMHhpYXRzbnc5d2J1c21vdmJ5NDdwcGhmc29reCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QWkuGmMgphvmE/giphy.gif)
 
@@ -6,24 +6,14 @@
 
 I’m **Lidor**, majoring in IT and Information Systems at the University of South-Eastern Norway (USN). I’m focused on **software development**, especially backend and full-stack. I'm also interested in **database design**, attempting to structure data effectively for reliability and performance. I’m here to learn, build, and collaborate.
 
-🌱 **Learning:** Software architecture, backend dev, and full-stack tech  
+🌱 **Learning:** Software architecture, backend dev, and full-stack  
 💻 **Loves:** Learning, hands-on projects and trying out new tools  
 🤝 **Vibe:** Teamwork and sharing what I know  
 
 ---
 
-## What I’m Working On
+## Languages & Tools I Use
 
-🛠️ Building skills in **backend development**  
-💡 Getting better at **problem-solving** through books, courses & projects  
-🌐 Exploring **web tech** for full-stack apps  
-🚀 Playing with new frameworks and tools when I can  
-
----
-
-## Skills & Tools
-
-### Tech I Use
 <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" width="30" height="30" style="margin-right: 10px;" />
@@ -32,10 +22,6 @@ I’m **Lidor**, majoring in IT and Information Systems at the University of Sou
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="30" height="30" style="margin-right: 10px;" />
-</p>
-
-### Tools I Use
-<p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="30" height="30" style="margin-right: 10px;" />
@@ -44,7 +30,8 @@ I’m **Lidor**, majoring in IT and Information Systems at the University of Sou
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" width="30" height="30" style="margin-right: 10px;" />
 </p>
 
-### Next Up
+### Getting to Know
+
 <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" width="30" height="30" style="margin-right: 10px;" />
