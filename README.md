@@ -40,7 +40,7 @@ I’m **Lidor**, majoring in IT and Information Systems at the University of Sou
 
 ---
 
-## 📚 Learning Resources
+## 📚 Current Learning Resources
 
 - **Books:**  
   - "Full Stack Development with Spring Boot 3 and React" (Juha Hinkula)  
