@@ -12,9 +12,9 @@ I’m here to learn and collaborate.
 
 ---
 
-## 🛠️ Tools & Technologies We Cover
+## 🛠️ Tools & Technologies
 
-These are the tools and technologies I’m working with in my studies and projects:
+These are the tools and technologies I’m working with in my studies and projects, and some I wish to explore:
 
 ### Programming Languages
 <p align="left">
@@ -27,12 +27,14 @@ These are the tools and technologies I’m working with in my studies and projec
 <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="30" height="30" style="margin-right: 10px;" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" width="30" height="30" style="margin-right: 10px;" />
 </p>
 
 ### Databases
 <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="30" height="30" style="margin-right: 10px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" width="30" height="30" style="margin-right: 10px;" />
 </p>
 
 ### Tools
@@ -46,6 +48,7 @@ These are the tools and technologies I’m working with in my studies and projec
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" width="30" height="30" style="margin-right: 10px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Notebook" width="30" height="30" style="margin-right: 10px;" />
 </p>
 
 ### On the Learning Horizon
