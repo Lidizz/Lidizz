@@ -49,9 +49,11 @@ These are the tools and technologies I’m working with in my studies and projec
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" width="30" height="30" style="margin-right: 10px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Notebook" width="30" height="30" style="margin-right: 10px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" width="30" height="30" style="margin-right: 10px;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="30" height="30" style="margin-right: 10px;">
 </p>
 
-### On the Learning Horizon
+<!-- ### On the Learning Horizon
 <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="30" height="30" style="margin-right: 10px;">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="30" height="30" style="margin-right: 10px;">
@@ -60,7 +62,7 @@ These are the tools and technologies I’m working with in my studies and projec
 
 [//]: # (  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" width="30" height="30" style="margin-right: 10px;">)
 </p>
-
+-->
 ---
 
 [//]: # (## 📚 Learning Resources)
