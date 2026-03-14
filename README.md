@@ -1,4 +1,4 @@
-<!--
+<!-- <!--
   Lidizz / README.md
   GitHub profile README — Lidor Shachar
 -->
@@ -126,3 +126,4 @@ If you want a second opinion or a second brain on something, reach out.
 <sub>↓ pinned projects below — have a look</sub>
 
 </div>
+ -->
