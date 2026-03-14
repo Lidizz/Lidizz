@@ -1,115 +1,107 @@
-# 🎋 Welcome to my GitHub!
-
-## About Me
-
-Hei! I’m **Lidor**, an IT and Information Systems student at the University of South-Eastern Norway (USN).  
-Interested in **software development**, particularly *backend*, *full-stack* and *database design*.  
-I’m here to learn and collaborate.
-
-🌱 **Learning:** Backend, full-stack and software architecture  
-💻 **Loves:** Learning, hands-on projects and trying out new tools  
-🤝 **Vibe:** Teamwork and sharing
-
----
-
-## 🛠️ Tools & Technologies
-
-These are the tools and technologies I’m working with in my studies and projects, and some I wish to explore:
-
-### Programming Languages
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="30" height="30" style="margin-right: 10px;" />
-</p>
-
-### Frameworks & Libraries
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="30" height="30" style="margin-right: 10px;" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" width="30" height="30" style="margin-right: 10px;" />
-</p>
-
-### Databases
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" width="30" height="30" style="margin-right: 10px;" />
-</p>
-
-### Tools
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" alt="Swagger" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original.svg" alt="WebStorm" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Notebook" width="30" height="30" style="margin-right: 10px;" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" width="30" height="30" style="margin-right: 10px;">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="30" height="30" style="margin-right: 10px;">
-</p>
-
-<!-- ### On the Learning Horizon
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="30" height="30" style="margin-right: 10px;">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="30" height="30" style="margin-right: 10px;">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" width="30" height="30" style="margin-right: 10px;">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="30" height="30" style="margin-right: 10px;">
-
-[//]: # (  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" width="30" height="30" style="margin-right: 10px;">)
-</p>
+<!--
+  ╔══════════════════════════════════════════════════════╗
+  ║  Lidizz / README.md                                  ║
+  ║  GitHub profile README — Lidor Shachar               ║
+  ╚══════════════════════════════════════════════════════╝
 -->
----
-
-[//]: # (## 📚 Learning Resources)
-
-[//]: # ()
-[//]: # (- **Books:**)
-
-[//]: # (    - "Full Stack Development with Spring Boot 3 and React" &#40;Juha Hinkula&#41;)
-
-[//]: # (    - "Introduction to Java Programming and Data Structures" &#40;Yong Daniel Liang&#41;)
-
-[//]: # (    - "Algorithms, Fourth Edition" &#40;Robert Sedgewick, Kevin Wayne&#41;)
-
-[//]: # (- **Courses:**)
-
-[//]: # (    - "React - The Complete Guide" &#40;Maximilian Schwarzmüller&#41;)
-
-[//]: # (---)
-
-[//]: # ()
-[//]: # (<p align="center">)
-
-[//]: # (  <img src="https://github-readme-stats.vercel.app/api?username=Lidizz&show_icons=true&theme=dark" alt="GitHub Stats" />)
-
-[//]: # (</p>)
-
-[//]: # ()
-[//]: # (---)
-
-## Let’s Connect
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/lidor-shachar-2546b728/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="https://github.com/Lidizz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
-    <a href="https://x.com/__Lidizz__"><img src="https://img.shields.io/badge/X-1DA1F2?style=for-the-badge&logo=x&logoColor=white"></a>
-  <a href="https://discord.com/users/lidizz"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a>
 
 <div align="center">
 
-![Greeting GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3NsZHFyb2FwNHBtMHhpYXRzbnc5d2J1c21vdmJ5NDdwcGhmc29reCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QWkuGmMgphvmE/giphy.gif)
+<!-- Auto dark/light theme via GitHub's picture tag -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/Lidizz/Lidizz/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/Lidizz/Lidizz/output/github-contribution-grid-snake.svg" />
+  <img alt="contribution snake animation"
+    src="https://raw.githubusercontent.com/Lidizz/Lidizz/output/github-contribution-grid-snake.svg" />
+</picture>
 
 </div>
-</p>
-
 
 ---
 
-*Built by [Lidizz](https://github.com/Lidizz) ☕*
+### Hey, I'm Lidor &nbsp;👋
+
+I work as a system developer with a focus on backend systems —
+the kind of work that usually goes unnoticed until something breaks.
+On the side I'm studying **IT & Information Systems at USN** in Norway,
+and slowly finding my footing in **AI and ML**.
+Still lots to learn. Always will be.
 
 ---
+
+<details>
+<summary><b>⚙️ &nbsp; Fellow developer — what do you build?</b></summary>
+<br>
+
+Most of my day-to-day is backend work — distributed systems, service design,
+the infrastructure that tends to be invisible until it isn't.
+
+I care a lot about writing **clear, maintainable code** — not clever code,
+just code the next person can follow without wanting to close the file.
+I'm also studying IT & IS at USN which keeps me honest about the fundamentals
+I sometimes skip past at work.
+
+The pinned repos below are probably a better introduction than anything I can write here.
+
+</details>
+
+<details>
+<summary><b>◎ &nbsp; Recruiter / hiring — background & experience</b></summary>
+<br>
+
+I'm a system developer based in Norway with a focus on backend systems and infrastructure.
+I work with enterprise systems in my day job and I'm currently finishing
+a **BSc in IT & Information Systems at USN**.
+
+I'm not actively looking at the moment, but I'm always happy to have a conversation.
+**LinkedIn is the best way to reach me** — find me as [lidor-shachar](https://www.linkedin.com/in/lidor-shachar-2546b728/).
+
+</details>
+
+<details>
+<summary><b>✦ &nbsp; Just browsing — tell me about yourself</b></summary>
+<br>
+
+I'm a developer from Norway who spends probably too much time thinking about
+**why systems fail** and what it actually takes to make them not do that.
+
+Outside work I'm a student — which mostly means I'm always in the middle of learning
+something new and occasionally realising I understood the previous thing wrong.
+Right now that's AI and ML. Exciting, humbling, sometimes frustrating in equal measure.
+
+If something in my repos turns out to be useful to you, that genuinely makes my day.
+
+</details>
+
+<details>
+<summary><b>⬡ &nbsp; Want to collaborate — let's talk</b></summary>
+<br>
+
+I'm open to collaborating on things that feel worth building — doesn't have to be
+polished or fully formed. Some of the best projects start as half an idea in a conversation.
+
+Things I'd enjoy: **backend tooling, systems problems, or anything touching AI/ML**.
+If you want a second brain on something, reach out.
+
+You can find me on **LinkedIn** · **X** (@__Lidizz__) · **Discord** (lidizz)
+or just open an issue on one of the repos below.
+
+</details>
+
+---
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lidor-shachar-2546b728/)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Lidizz)
+&nbsp;
+[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/__Lidizz__)
+&nbsp;
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/users/lidizz)
+
+<sub>↓ pinned projects below — have a look</sub>
+
+</div>
