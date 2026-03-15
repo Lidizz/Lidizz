@@ -5,11 +5,10 @@
 
 <div align="center">
 
-<!-- Typing SVG — rotates through phrases, dark/light auto-switching -->
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=2500&color=A6E22E&center=true&vCenter=true&width=600&lines=System+developer+%C2%B7+system+thinker+%C2%B7+Norway;I+write+code+nobody+notices+until+it+breaks.;Studying+IT+%26+IS+%40+USN+%F0%9F%87%B3%F0%9F%87%B4;currently+learning+AI%2FML+%E2%80%94+slowly%2C+but+surely.;open+to+interesting+problems." />
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=2500&color=0369A1&center=true&vCenter=true&width=600&lines=System+developer+%C2%B7+system+thinker+%C2%B7+Norway;I+write+code+nobody+notices+until+it+breaks.;Studying+IT+%26+IS+%40+USN+%F0%9F%87%B3%F0%9F%87%B4;currently+learning+AI%2FML+%E2%80%94+slowly%2C+but+surely.;open+to+interesting+problems."
+    srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=2500&color=39D353&center=true&vCenter=true&width=620&lines=Systems%20developer%20%C2%B7%20Backend%20%C2%B7%20System%20thinker%20%C2%B7%20Norway%3BI%20write%20code%20nobody%20notices%20until%20it%20breaks.%3BStudying%20IT%20%26%20IS%20%40%20USN%20%F0%9F%87%B3%F0%9F%87%B4%3BExperimenting%20with%20AI%2FML%2C%20one%20humbling%20mistake%20at%20a%20time.%3BThe%20more%20I%20know,%20the%20longer%20the%20reading%20list%20gets." />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=2500&color=2DA44E&center=true&vCenter=true&width=620&lines=Systems%20developer%20%C2%B7%20Backend%20%C2%B7%20System%20thinker%20%C2%B7%20Norway%3BI%20write%20code%20nobody%20notices%20until%20it%20breaks.%3BStudying%20IT%20%26%20IS%20%40%20USN%20%F0%9F%87%B3%F0%9F%87%B4%3BExperimenting%20with%20AI%2FML%2C%20one%20humbling%20mistake%20at%20a%20time.%3BThe%20more%20I%20know,%20the%20longer%20the%20reading%20list%20gets."
     alt="Typing SVG" />
 </picture>
 
