@@ -26,7 +26,8 @@ and an IT & Information Systems student at USN by night.
   <source media="(prefers-color-scheme: dark)"
     srcset="https://raw.githubusercontent.com/Lidizz/Lidizz/main/bento-dark.svg" />
   <img src="https://raw.githubusercontent.com/Lidizz/Lidizz/main/bento-light.svg"
-    alt="Lidor: role, location, studying, focus" />
+    alt="Lidor: role, location, studying, focus"
+    width="100%" />
 </picture>
 </div>
 
@@ -40,7 +41,7 @@ and an IT & Information Systems student at USN by night.
 My main focus is `backend`. Distributed systems, and infrastructure.
 
 I care a lot about code that communicates clearly,
-so that the next person opening it doesn't immediately want to close it.
+so that the next person opening it doesn't immediately want to close it.  
 Studying `IT & IS` at USN in parallel **keeps** me honest about the fundamentals.
 
 The repos include mostly school work and hobby projects.
