@@ -38,7 +38,7 @@ and an IT & Information Systems student at USN by night.
 <summary><b> ⚙ &nbsp;Fellow developer</b></summary>
 <br>
 
-My main focus is `backend`. Distributed systems, and infrastructure.
+My main focus is `backend`, distributed systems, and infrastructure.
 
 I care a lot about code that communicates clearly,
 so that the next person opening it doesn't immediately want to close it.  
@@ -68,7 +68,7 @@ Open to a small project, or some collaboration that fits around my work and stud
 
 Developer based in Norway.  
 Probably spends too much time thinking about
-**why systems fail** and what it would actually take to make them not do that.
+**why systems fail** and what it would actually take to make them not do that.  
 Enjoying the process of learning and the humbling realisations that come with it.
 
 Student outside work, currently focusing on `AI` and `ML` at USN with focus on NLP and applied ML.  
