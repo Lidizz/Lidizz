@@ -71,11 +71,9 @@ If something in my repos is useful to you, I'd be happy to know :)
 <br>
 
 Open to working on things when i get some free time.
-Some of the better projects started as half an idea or a
-*"how hard could it be"*.
 
 Things I'd enjoy: `backend tooling` · `systems problems` · `applied ML`.  
-Feel free to reach out.
+But open for new things, so feel free to reach out.
 
 **LinkedIn** · **X** ([@__Lidizz__](https://x.com/__Lidizz__)) ·
 **Discord** (`lidizz`).
