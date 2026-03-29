@@ -57,8 +57,6 @@ Open to a small project, or some collaboration that fits around my work and stud
 <br>
 
 Developer based in Norway.  
-Probably spends too much time thinking about
-**why systems fail** and what it would actually take to make them not do that.  
 Enjoying the process of learning and the humbling realisations that come with it.
 
 Student outside work, currently focusing on `AI` and `ML` at USN with focus on NLP and applied ML.  
