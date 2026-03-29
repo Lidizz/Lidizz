@@ -2,22 +2,12 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=2500&color=39D353&center=true&vCenter=true&width=620&lines=Systems%20Developer%20%C2%B7%20Backend%20%C2%B7%20System%20Thinker%20%C2%B7%20Norway%3BI%20write%20code%20nobody%20notices.%20Unless%20it%20breaks.%3BStudying%20IT%20%26%20IS%20%40%20USN%20%F0%9F%87%B3%F0%9F%87%B4%3BExperimenting%20with%20AI%2FML%2C%20one%20humbling%20mistake%20at%20a%20time.%3BThe%20more%20I%20know%2C%20the%20longer%20the%20reading%20list%20gets." />
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=2500&color=2DA44E&center=true&vCenter=true&width=620&lines=Systems%20Developer%20%C2%B7%20Backend%20%C2%B7%20System%20Thinker%20%C2%B7%20Norway%3BI%20write%20code%20nobody%20notices.%20Unless%20it%20breaks.%3BStudying%20IT%20%26%20IS%20%40%20USN%20%F0%9F%87%B3%F0%9F%87%B4%3BExperimenting%20with%20AI%2FML%2C%20one%20humbling%20mistake%20at%20a%20time.%3BThe%20more%20I%20know%2C%20the%20longer%20the%20reading%20list%20gets."
+    srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=3500&center=true&vCenter=true&width=620&color=39D353&lines=Hei%2C%20I%27m%20Lidor%20%F0%9F%A7%98%3BSystems%20Developer%20%C2%B7%20Backend%20%C2%B7%20System%20Thinker%20%C2%B7%20Norway%3BI%20write%20code%20nobody%20notices.%20Unless%20it%20breaks.%3BStudying%20IT%20%26%20IS%20%40%20USN%20%F0%9F%87%B3%F0%9F%87%B4%3BExperimenting%20with%20AI%2FML%2C%20one%20humbling%20mistake%20at%20a%20time.%3BThe%20more%20I%20know%2C%20the%20longer%20the%20reading%20list%20gets." />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=3500&center=true&vCenter=true&width=620&color=2DA44E&lines=Hei%2C%20I%27m%20Lidor%20%F0%9F%A7%98%3BSystems%20Developer%20%C2%B7%20Backend%20%C2%B7%20System%20Thinker%20%C2%B7%20Norway%3BI%20write%20code%20nobody%20notices.%20Unless%20it%20breaks.%3BStudying%20IT%20%26%20IS%20%40%20USN%20%F0%9F%87%B3%F0%9F%87%B4%3BExperimenting%20with%20AI%2FML%2C%20one%20humbling%20mistake%20at%20a%20time.%3BThe%20more%20I%20know%2C%20the%20longer%20the%20reading%20list%20gets."
     alt="Typing SVG" />
 </picture>
 
 </div>
-
----
-
-## Hei, I'm Lidor 🧘
-
-```
-I keep things running. Quietly, mostly.
-System developer at Statens Vegvesen by day
-and an IT & Information Systems student at USN by night.
-```
 
 ---
 
@@ -34,14 +24,14 @@ and an IT & Information Systems student at USN by night.
 ---
 
 ### What brings you here?
+
 <details>
-<summary><b> ⚙ &nbsp;Fellow developer</b></summary>
+<summary><b>◈ &nbsp;Fellow developer</b></summary>
 <br>
 
-My main focus is `backend`, distributed systems, and infrastructure.
+My main focus is `backend`, distributed systems, and infrastructure.  
+I care about code that communicates clearly.
 
-I care a lot about code that communicates clearly,
-so that the next person opening it doesn't immediately want to close it.  
 Studying `IT & IS` at USN in parallel **keeps** me honest about the fundamentals.
 
 The repos include mostly school work and hobby projects.
@@ -72,7 +62,7 @@ Probably spends too much time thinking about
 Enjoying the process of learning and the humbling realisations that come with it.
 
 Student outside work, currently focusing on `AI` and `ML` at USN with focus on NLP and applied ML.  
-I like comparing models and trying to understand their tradeoffs.
+I like comparing models and learn their tradeoffs.
 
 If something in my repos is useful to you, I'd be happy to know :)
 
@@ -82,9 +72,9 @@ If something in my repos is useful to you, I'd be happy to know :)
 <summary><b>⬡ &nbsp;Want to collaborate</b></summary>
 <br>
 
-Open to working on things. Doesn't have to be polished or fully formed,  
-I believe some of the better projects start as half an idea and a
-*"how hard could it be"* approach.
+Open to working on things when i get some free time.
+Some of the better projects started as half an idea or a
+*"how hard could it be"*.
 
 Things I'd enjoy: `backend tooling` · `systems problems` · `applied ML`.  
 Feel free to reach out.
