@@ -27,6 +27,6 @@
 <text x="14" y="250" font-family="monospace" font-size="20" fill="#e6edf3" font-weight="normal" letter-spacing="0">🌧️</text>
 <text x="46" y="250" font-family="monospace" font-size="18" fill="#e6db74" font-weight="600" letter-spacing="0">6°C</text>
 <line x1="144" y1="226" x2="144" y2="250" stroke="#30363d" stroke-width="0.5"/>
-<text x="160" y="242" font-family="monospace" font-size="12" fill="#e6edf3" font-weight="600" letter-spacing="0">Light drizzle</text>
+<text x="160" y="242" font-family="monospace" font-size="12" fill="#e6edf3" font-weight="600" letter-spacing="0">Light rain shower</text>
 <text x="160" y="258" font-family="monospace" font-size="10" fill="#8b949e" font-weight="normal" letter-spacing="0">Oslo, Norway · updated daily</text>
 </svg>
