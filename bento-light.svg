@@ -25,7 +25,7 @@
 <rect x="0" y="208" width="640" height="56" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="0.5"/>
 <text x="14" y="228" font-family="monospace" font-size="9" fill="#afb8c1" font-weight="normal" letter-spacing="2">WEATHER</text>
 <text x="14" y="254" font-family="monospace" font-size="22" fill="#1f2328" font-weight="normal" letter-spacing="0">☀️</text>
-<text x="52" y="254" font-family="monospace" font-size="20" fill="#9a6700" font-weight="600" letter-spacing="0">7°C</text>
+<text x="52" y="254" font-family="monospace" font-size="20" fill="#9a6700" font-weight="600" letter-spacing="0">9°C</text>
 <line x1="154" y1="222" x2="154" y2="256" stroke="#d0d7de" stroke-width="0.5"/>
 <text x="168" y="242" font-family="monospace" font-size="12" fill="#1f2328" font-weight="600" letter-spacing="0">Clearsky</text>
 <text x="168" y="258" font-family="monospace" font-size="10" fill="#57606a" font-weight="normal" letter-spacing="0">Oslo, Norway  ·  updated hourly</text>
