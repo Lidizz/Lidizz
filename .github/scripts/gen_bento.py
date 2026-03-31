@@ -1,7 +1,21 @@
+"""
+.github/scripts/gen_bento.py
+
+Generates bento-dark.svg or bento-light.svg with live weather data.
+
+Usage (called by GitHub Action):
+    python3 gen_bento.py <theme> <temp> <condition> <emoji> > bento-<theme>.svg
+
+Usage (local placeholder generation):
+    python3 gen_bento.py
+    → writes bento-dark.svg and bento-light.svg with placeholder data
+"""
+
 import sys
 
-def make_svg(theme, temp="--", condition="Fetching...", emoji="🌡"):
-    dark = theme == "dark"
+
+def make_svg(theme, temp="--°C", condition="Loading...", emoji="🌡️"):
+    dark  = theme == "dark"
     bg    = "#0d1117" if dark else "#ffffff"
     bg2   = "#161b22" if dark else "#f6f8fa"
     bg3   = "#1c2128" if dark else "#eaeef2"
@@ -16,9 +30,9 @@ def make_svg(theme, temp="--", condition="Fetching...", emoji="🌡"):
 
     W, GAP, PAD = 640, 10, 14
     CW  = (W - GAP) // 2
-    H1  = 92   # top row height
-    H2  = 82   # middle row height
-    H3  = 52   # weather row height
+    H1  = 92   # top row
+    H2  = 82   # middle row
+    H3  = 56   # weather row
     TH  = PAD + H1 + GAP + H2 + GAP + H3 + PAD
 
     def rect(x, y, w, h, fill=bg2, stroke=bdr, rx=8):
@@ -37,6 +51,9 @@ def make_svg(theme, temp="--", condition="Fetching...", emoji="🌡"):
     r2y = PAD + H1 + GAP
     r3y = PAD + H1 + GAP + H2 + GAP
     BW  = CW - PAD*2 - 52
+
+    # vertical separator x position in weather cell
+    SEP_X = PAD + 140
 
     parts = [
         f'<svg width="{W}" height="{TH}" viewBox="0 0 {W} {TH}" xmlns="http://www.w3.org/2000/svg">',
@@ -75,31 +92,32 @@ def make_svg(theme, temp="--", condition="Fetching...", emoji="🌡"):
         # ── Cell 5: WEATHER (full width) ─────────────────────
         rect(0, r3y, W, H3),
         txt(PAD, r3y+20, "WEATHER", t3, size=9, spacing="2"),
-        # emoji + temp (large)
-        txt(PAD, r3y+42, f"{emoji}", t1, size=20),
-        txt(PAD+32, r3y+42, f"{temp}", amber, size=18, weight="600"),
-        # separator
-        f'<line x1="{PAD+130}" y1="{r3y+18}" x2="{PAD+130}" y2="{r3y+H3-10}" stroke="{bdr}" stroke-width="0.5"/>',
-        # condition + location
-        txt(PAD+146, r3y+34, condition, t1, size=12, weight="600"),
-        txt(PAD+146, r3y+50, "Oslo, Norway · updated daily", t2, size=10),
+        # emoji
+        txt(PAD, r3y+46, emoji, t1, size=22),
+        # temperature
+        txt(PAD+38, r3y+46, temp, amber, size=20, weight="600"),
+        # vertical separator
+        f'<line x1="{SEP_X}" y1="{r3y+14}" x2="{SEP_X}" y2="{r3y+H3-8}" '
+        f'stroke="{bdr}" stroke-width="0.5"/>',
+        # condition
+        txt(SEP_X+14, r3y+34, condition, t1, size=12, weight="600"),
+        # location + update cadence
+        txt(SEP_X+14, r3y+50, "Oslo, Norway  ·  updated hourly", t2, size=10),
 
         '</svg>'
     ]
     return "\n".join(parts)
 
-# When called with args: theme temp condition emoji
-if len(sys.argv) >= 5:
-    theme     = sys.argv[1]
-    temp      = sys.argv[2]
-    condition = sys.argv[3]
-    emoji     = sys.argv[4]
-    print(make_svg(theme, temp, condition, emoji))
-else:
-    # Default — generate both with placeholder data for download
-    for theme in ["dark", "light"]:
-        svg = make_svg(theme, "--°C", "Loading...", "🌡")
-        with open(f"/mnt/user-data/outputs/bento-{theme}.svg", "w", encoding="utf-8") as f:
-            f.write(svg)
-        print(f"Written: bento-{theme}.svg")
 
+if __name__ == "__main__":
+    if len(sys.argv) >= 5:
+        # Called by GitHub Action: theme temp condition emoji
+        print(make_svg(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]))
+    else:
+        # Local: generate placeholder SVGs for both themes
+        for theme in ["dark", "light"]:
+            svg = make_svg(theme)
+            path = f"bento-{theme}.svg"
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(svg)
+            print(f"Written: {path}")
