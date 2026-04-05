@@ -16,7 +16,7 @@
 <text y="122" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">Experimenting with </tspan><tspan fill="#8250df">AI/ML</tspan><tspan fill="#57606a"> — one humbling mistake at a time.</tspan></text>
 <text y="155" font-family="monospace" font-size="12" x="20"><tspan fill="#2da44e">lidizz@github</tspan><tspan fill="#afb8c1">:</tspan><tspan fill="#9a6700">~</tspan><tspan fill="#afb8c1">$ </tspan><tspan fill="#0969da">cat status.json</tspan></text>
 <text y="177" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">{</tspan></text>
-<text y="199" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">  </tspan><tspan fill="#0550ae">&quot;weather&quot;</tspan><tspan fill="#57606a">:  </tspan><tspan fill="#0a3069">&quot;🌡️ --°C · Loading... · --:-- UTC&quot;</tspan><tspan fill="#57606a">,</tspan></text>
+<text y="199" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">  </tspan><tspan fill="#0550ae">&quot;weather&quot;</tspan><tspan fill="#57606a">:  </tspan><tspan fill="#0a3069">&quot;☁️ 6°C · Cloudy · 15:01 UTC&quot;</tspan><tspan fill="#57606a">,</tspan></text>
 <text y="221" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">  </tspan><tspan fill="#0550ae">&quot;status&quot;</tspan><tspan fill="#57606a">:   </tspan><tspan fill="#2da44e">&quot;open to interesting conversations&quot;</tspan></text>
 <text y="243" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">}</tspan></text>
 <text y="276" font-family="monospace" font-size="12" x="20"><tspan fill="#2da44e">lidizz@github</tspan><tspan fill="#afb8c1">:</tspan><tspan fill="#9a6700">~</tspan><tspan fill="#afb8c1">$ </tspan></text>
