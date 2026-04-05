@@ -11,13 +11,15 @@
 
 ---
 
-```
-lidizz@github:~$ cat about.txt
-System developer @ Statens vegvesen by day,  
-BSc student, IT & IS @ USN by nighty.
-
-lidizz@github:~$
-```
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/Lidizz/Lidizz/main/terminal-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Lidizz/Lidizz/main/terminal-light.svg"
+    alt="Terminal — about Lidor"
+    width="100%" />
+</picture>
+</div>
 
 <div align="center">
 <picture>

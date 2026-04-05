@@ -1,0 +1,24 @@
+<svg width="640" height="318" viewBox="0 0 640 318" xmlns="http://www.w3.org/2000/svg">
+<rect width="640" height="318" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="0.5"/>
+<rect width="640" height="36" rx="10" fill="#e8e8e8"/>
+<rect y="32" width="640" height="4" fill="#e8e8e8"/>
+<line x1="0" y1="36" x2="640" y2="36" stroke="#d0d7de" stroke-width="0.5"/>
+<circle cx="16" cy="18" r="5.5" fill="#ff5f57"/>
+<circle cx="32" cy="18" r="5.5" fill="#febc2e"/>
+<circle cx="48" cy="18" r="5.5" fill="#28c840"/>
+<text x="320" y="22" font-family="monospace" font-size="11" fill="#afb8c1" text-anchor="middle">lidizz@github — bash</text>
+<rect y="36" width="640" height="282" fill="#f6f8fa"/>
+<rect y="308" width="640" height="10" rx="0" fill="#f6f8fa"/>
+<rect y="308" width="640" height="10" rx="10" fill="#ffffff"/>
+<rect y="298" width="640" height="10" fill="#f6f8fa"/>
+<text y="78" font-family="monospace" font-size="12" x="20"><tspan fill="#2da44e">lidizz@github</tspan><tspan fill="#afb8c1">:</tspan><tspan fill="#9a6700">~</tspan><tspan fill="#afb8c1">$ </tspan><tspan fill="#0969da">cat about.txt</tspan></text>
+<text y="100" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">By day: </tspan><tspan fill="#2da44e">Statens vegvesen</tspan><tspan fill="#57606a">. By night: </tspan><tspan fill="#0969da">USN, IT &amp; IS</tspan><tspan fill="#57606a">.</tspan></text>
+<text y="122" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">Experimenting with </tspan><tspan fill="#8250df">AI/ML</tspan><tspan fill="#57606a"> — one humbling mistake at a time.</tspan></text>
+<text y="155" font-family="monospace" font-size="12" x="20"><tspan fill="#2da44e">lidizz@github</tspan><tspan fill="#afb8c1">:</tspan><tspan fill="#9a6700">~</tspan><tspan fill="#afb8c1">$ </tspan><tspan fill="#0969da">cat status.json</tspan></text>
+<text y="177" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">{</tspan></text>
+<text y="199" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">  </tspan><tspan fill="#0550ae">&quot;weather&quot;</tspan><tspan fill="#57606a">:  </tspan><tspan fill="#0a3069">&quot;🌡️ --°C · Loading... · --:-- UTC&quot;</tspan><tspan fill="#57606a">,</tspan></text>
+<text y="221" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">  </tspan><tspan fill="#0550ae">&quot;status&quot;</tspan><tspan fill="#57606a">:   </tspan><tspan fill="#2da44e">&quot;open to interesting conversations&quot;</tspan></text>
+<text y="243" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">}</tspan></text>
+<text y="276" font-family="monospace" font-size="12" x="20"><tspan fill="#2da44e">lidizz@github</tspan><tspan fill="#afb8c1">:</tspan><tspan fill="#9a6700">~</tspan><tspan fill="#afb8c1">$ </tspan></text>
+<rect x="139" y="266" width="7" height="13" fill="#2da44e"><animate attributeName="opacity" values="1;1;0;0" dur="1.2s" repeatCount="indefinite"/></rect>
+</svg>

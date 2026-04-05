@@ -1,8 +1,8 @@
 # .github/workflows/bento.yml
 #
-# Fetches live Oslo weather from met.no locationforecast 2.0
-# Regenerates slim bento SVGs (weather + focus) hourly.
-# Includes timestamp of last fetch in the SVG.
+# Fetches live Oslo weather from met.no locationforecast 2.0.
+# Regenerates terminal-dark.svg, terminal-light.svg,
+# bento-dark.svg and bento-light.svg every hour.
 
 name: Update Bento Weather
 
@@ -48,7 +48,6 @@ jobs:
           temp   = f"{temp_c}°C"
           symbol = next1h.get("summary", {}).get("symbol_code", "cloudy")
 
-          # Single-emoji map — no doubles
           EMOJI_MAP = {
               "clearsky_day":            "☀️",
               "clearsky_night":          "🌙",
@@ -97,8 +96,6 @@ jobs:
               base  = symbol.replace("_day","").replace("_night","").replace("_polartwilight","")
               emoji = EMOJI_MAP.get(base, "🌡️")
 
-          # Human-readable condition with proper spacing
-          base = symbol.replace("_day","").replace("_night","").replace("_polartwilight","")
           COND_MAP = {
               "clearsky":        "Clear sky",
               "fair":            "Fair",
@@ -129,11 +126,9 @@ jobs:
               "snowandthunder":  "Snow and thunder",
               "lightrainshowersandthunder": "Showers and thunder",
           }
+          base      = symbol.replace("_day","").replace("_night","").replace("_polartwilight","")
           condition = COND_MAP.get(base, base.capitalize())
-
-          # Timestamp — HH:MM UTC
-          now = datetime.now(timezone.utc)
-          timestamp = now.strftime("%H:%M UTC")
+          timestamp = datetime.now(timezone.utc).strftime("%H:%M UTC")
 
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"TEMP={temp}\n")
@@ -143,6 +138,22 @@ jobs:
 
           print(f"Weather: {emoji} {temp} — {condition} ({timestamp})")
           EOF
+
+      - name: Regenerate terminal SVGs
+        run: |
+          python3 .github/scripts/gen_terminal.py dark \
+            "${{ steps.weather.outputs.TEMP }}" \
+            "${{ steps.weather.outputs.CONDITION }}" \
+            "${{ steps.weather.outputs.EMOJI }}" \
+            "${{ steps.weather.outputs.TIMESTAMP }}" \
+            > terminal-dark.svg
+
+          python3 .github/scripts/gen_terminal.py light \
+            "${{ steps.weather.outputs.TEMP }}" \
+            "${{ steps.weather.outputs.CONDITION }}" \
+            "${{ steps.weather.outputs.EMOJI }}" \
+            "${{ steps.weather.outputs.TIMESTAMP }}" \
+            > terminal-light.svg
 
       - name: Regenerate bento SVGs
         run: |
@@ -164,6 +175,6 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add bento-dark.svg bento-light.svg
-          git diff --cached --quiet || git commit -m "chore: update bento weather [skip ci]"
+          git add terminal-dark.svg terminal-light.svg bento-dark.svg bento-light.svg
+          git diff --cached --quiet || git commit -m "chore: update weather SVGs [skip ci]"
           git push
