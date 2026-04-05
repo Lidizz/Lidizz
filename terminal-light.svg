@@ -12,13 +12,13 @@
 <rect y="330" width="640" height="10" rx="10" fill="#ffffff"/>
 <rect y="320" width="640" height="10" fill="#f6f8fa"/>
 <text y="78" font-family="monospace" font-size="12" x="20"><tspan fill="#2da44e">lidizz@github</tspan><tspan fill="#afb8c1">:</tspan><tspan fill="#9a6700">~</tspan><tspan fill="#afb8c1">$ </tspan><tspan fill="#0969da">cat about.txt</tspan></text>
-<text y="100" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">Systems Developer </tspan><tspan fill="#2da44e">@ </tspan><tspan fill="#bc4c00">Statens vegvesen.</tspan></text>
-<text y="122" font-family="monospace" font-size="12" x="20"><tspan fill="#0969da">IT &amp; IS student </tspan><tspan fill="#2da44e">@ </tspan><tspan fill="#8250df">USN, </tspan><tspan fill="#57606a">Norway.</tspan></text>
-<text y="144" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">Experimenting with </tspan><tspan fill="#0969da">AI/ML</tspan><tspan fill="#57606a"> in my free time.</tspan></text>
+<text y="100" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">Systems Developer </tspan><tspan fill="#57606a">@ </tspan><tspan fill="#bc4c00">Statens vegvesen.</tspan></text>
+<text y="122" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">IT &amp; IS student </tspan><tspan fill="#57606a">@ </tspan><tspan fill="#8250df">USN, </tspan><tspan fill="#57606a">Norway.</tspan></text>
+<text y="144" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">Experimenting with </tspan><tspan fill="#57606a">AI/ML</tspan><tspan fill="#57606a"> in my free time.</tspan></text>
 <text y="177" font-family="monospace" font-size="12" x="20"><tspan fill="#2da44e">lidizz@github</tspan><tspan fill="#afb8c1">:</tspan><tspan fill="#9a6700">~</tspan><tspan fill="#afb8c1">$ </tspan><tspan fill="#0969da">cat status.json</tspan></text>
 <text y="199" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">{</tspan></text>
-<text y="221" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">  </tspan><tspan fill="#0550ae">&quot;weather&quot;</tspan><tspan fill="#57606a">:  </tspan><tspan fill="#0a3069">&quot;☁️ 7°C · Cloudy · last updated: 15:39 UTC&quot;</tspan><tspan fill="#57606a">,</tspan></text>
-<text y="243" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">  </tspan><tspan fill="#0550ae">&quot;status&quot;</tspan><tspan fill="#57606a">:   </tspan><tspan fill="#2da44e">&quot;open to interesting conversations&quot;</tspan></text>
+<text y="221" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">  </tspan><tspan fill="#0550ae">&quot;weather&quot;</tspan><tspan fill="#57606a">:  </tspan><tspan fill="#0a3069">&quot;☁️ 7°C · Cloudy · last updated: 15:47 UTC&quot;</tspan><tspan fill="#57606a">,</tspan></text>
+<text y="243" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">  </tspan><tspan fill="#0550ae">&quot;status&quot;</tspan><tspan fill="#57606a">:   </tspan><tspan fill="#57606a">&quot;open to interesting conversations&quot;</tspan></text>
 <text y="265" font-family="monospace" font-size="12" x="20"><tspan fill="#57606a">}</tspan></text>
 <text y="298" font-family="monospace" font-size="12" x="20"><tspan fill="#2da44e">lidizz@github</tspan><tspan fill="#afb8c1">:</tspan><tspan fill="#9a6700">~</tspan><tspan fill="#afb8c1">$ </tspan></text>
 <rect x="139" y="288" width="7" height="13" fill="#2da44e"><animate attributeName="opacity" values="1;1;0;0" dur="1.2s" repeatCount="indefinite"/></rect>
