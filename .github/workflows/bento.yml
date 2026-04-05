@@ -1,15 +1,8 @@
 # .github/workflows/bento.yml
 #
 # Fetches live Oslo weather from met.no locationforecast 2.0
-# and regenerates bento-dark.svg and bento-light.svg hourly.
-#
-# met.no returns symbol_code which encodes both weather AND
-# day/night — so icons automatically reflect actual conditions.
-#
-# TRIGGERS:
-#   - Every hour
-#   - On every push to main
-#   - Manually via Actions tab
+# Regenerates slim bento SVGs (weather + focus) hourly.
+# Includes timestamp of last fetch in the SVG.
 
 name: Update Bento Weather
 
@@ -38,82 +31,117 @@ jobs:
         run: |
           python3 << 'EOF'
           import urllib.request, json, os
+          from datetime import datetime, timezone
 
-          # met.no locationforecast 2.0 — Oslo coords
           url = "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.91&lon=10.75"
           req = urllib.request.Request(url, headers={
-              "User-Agent": "github.com/Lidizz/Lidizz profile readme (lidor-shachar on LinkedIn)"
+              "User-Agent": "github.com/Lidizz/Lidizz profile readme"
           })
           with urllib.request.urlopen(req) as r:
               data = json.loads(r.read())
 
-          # First timeseries entry = current conditions
-          ts   = data["properties"]["timeseries"][0]
-          inst = ts["data"]["instant"]["details"]
+          ts     = data["properties"]["timeseries"][0]
+          inst   = ts["data"]["instant"]["details"]
           next1h = ts["data"].get("next_1_hours", {})
 
           temp_c = round(inst["air_temperature"])
           temp   = f"{temp_c}°C"
-
-          # symbol_code encodes weather + day/night e.g. "clearsky_night"
           symbol = next1h.get("summary", {}).get("symbol_code", "cloudy")
 
-          # Map symbol_code to emoji — day/night aware
+          # Single-emoji map — no doubles
           EMOJI_MAP = {
-              "clearsky_day":           "☀️",
-              "clearsky_night":         "🌙",
-              "clearsky_polartwilight": "🌅",
-              "fair_day":               "🌤️",
-              "fair_night":             "🌙",
-              "partlycloudy_day":       "⛅",
-              "partlycloudy_night":     "☁️🌙",
-              "cloudy":                 "☁️",
-              "fog":                    "🌫️",
-              "lightrain":              "🌦️",
-              "lightrain_day":          "🌦️",
-              "lightrain_night":        "🌧️",
-              "rain":                   "🌧️",
-              "heavyrain":              "🌧️",
-              "lightrainshowers_day":   "🌦️",
-              "lightrainshowers_night": "🌧️",
-              "rainshowers_day":        "🌧️",
-              "rainshowers_night":      "🌧️",
-              "heavyrainshowers_day":   "🌧️",
-              "heavyrainshowers_night": "🌧️",
-              "lightsleet":             "🌨️",
-              "sleet":                  "🌨️",
-              "lightsleetshowers_day":  "🌨️",
-              "lightsleetshowers_night":"🌨️",
-              "lightsnow":              "❄️",
-              "snow":                   "❄️",
-              "heavysnow":              "❄️",
-              "lightsnowshowers_day":   "🌨️",
-              "lightsnowshowers_night": "❄️",
-              "snowshowers_day":        "🌨️",
-              "snowshowers_night":      "❄️",
-              "thunder":                "⛈️",
-              "rainandthunder":         "⛈️",
-              "lightrainandthunder":    "⛈️",
-              "snowandthunder":         "⛈️",
+              "clearsky_day":            "☀️",
+              "clearsky_night":          "🌙",
+              "clearsky_polartwilight":  "🌅",
+              "fair_day":                "🌤️",
+              "fair_night":              "🌙",
+              "partlycloudy_day":        "⛅",
+              "partlycloudy_night":      "🌙",
+              "cloudy":                  "☁️",
+              "fog":                     "🌫️",
+              "lightfog":                "🌫️",
+              "lightrainshowers_day":    "🌦️",
+              "lightrainshowers_night":  "🌧️",
+              "rainshowers_day":         "🌧️",
+              "rainshowers_night":       "🌧️",
+              "heavyrainshowers_day":    "🌧️",
+              "heavyrainshowers_night":  "🌧️",
+              "lightrain":               "🌦️",
+              "rain":                    "🌧️",
+              "heavyrain":               "🌧️",
+              "lightsleetshowers_day":   "🌨️",
+              "lightsleetshowers_night": "🌨️",
+              "sleetshowers_day":        "🌨️",
+              "sleetshowers_night":      "🌨️",
+              "lightsleet":              "🌨️",
+              "sleet":                   "🌨️",
+              "lightsnowshowers_day":    "🌨️",
+              "lightsnowshowers_night":  "❄️",
+              "snowshowers_day":         "🌨️",
+              "snowshowers_night":       "❄️",
+              "lightsnow":               "❄️",
+              "snow":                    "❄️",
+              "heavysnow":               "❄️",
+              "thunder":                 "⛈️",
+              "rainandthunder":          "⛈️",
+              "lightrainandthunder":     "⛈️",
+              "heavyrainandthunder":     "⛈️",
+              "sleetandthunder":         "⛈️",
+              "snowandthunder":          "⛈️",
+              "lightrainshowersandthunder_day":   "⛈️",
+              "lightrainshowersandthunder_night":  "⛈️",
           }
 
-          # Fallback: strip _day/_night and try base symbol
           emoji = EMOJI_MAP.get(symbol)
           if not emoji:
-              base = symbol.replace("_day","").replace("_night","").replace("_polartwilight","")
+              base  = symbol.replace("_day","").replace("_night","").replace("_polartwilight","")
               emoji = EMOJI_MAP.get(base, "🌡️")
 
-          # Human-readable condition from symbol (strip _day/_night)
-          condition = symbol.replace("_day","").replace("_night","").replace("_polartwilight","")
-          condition = condition.replace("_"," ").capitalize()
+          # Human-readable condition with proper spacing
+          base = symbol.replace("_day","").replace("_night","").replace("_polartwilight","")
+          COND_MAP = {
+              "clearsky":        "Clear sky",
+              "fair":            "Fair",
+              "partlycloudy":    "Partly cloudy",
+              "cloudy":          "Cloudy",
+              "fog":             "Fog",
+              "lightfog":        "Light fog",
+              "lightrain":       "Light rain",
+              "rain":            "Rain",
+              "heavyrain":       "Heavy rain",
+              "lightrainshowers":"Light showers",
+              "rainshowers":     "Showers",
+              "heavyrainshowers":"Heavy showers",
+              "lightsleet":      "Light sleet",
+              "sleet":           "Sleet",
+              "lightsleetshowers":"Light sleet showers",
+              "sleetshowers":    "Sleet showers",
+              "lightsnow":       "Light snow",
+              "snow":            "Snow",
+              "heavysnow":       "Heavy snow",
+              "lightsnowshowers":"Light snow showers",
+              "snowshowers":     "Snow showers",
+              "thunder":         "Thunder",
+              "rainandthunder":  "Rain and thunder",
+              "lightrainandthunder": "Light rain, thunder",
+              "heavyrainandthunder": "Heavy rain, thunder",
+              "sleetandthunder": "Sleet and thunder",
+              "snowandthunder":  "Snow and thunder",
+              "lightrainshowersandthunder": "Showers and thunder",
+          }
+          condition = COND_MAP.get(base, base.capitalize())
 
-          # Write to GITHUB_OUTPUT
+          # Timestamp — HH:MM UTC
+          now = datetime.now(timezone.utc)
+          timestamp = now.strftime("%H:%M UTC")
+
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"TEMP={temp}\n")
               f.write(f"CONDITION={condition}\n")
               f.write(f"EMOJI={emoji}\n")
+              f.write(f"TIMESTAMP={timestamp}\n")
 
-          print(f"Weather: {emoji} {temp} — {condition} (symbol: {symbol})")
+          print(f"Weather: {emoji} {temp} — {condition} ({timestamp})")
           EOF
 
       - name: Regenerate bento SVGs
@@ -122,12 +150,14 @@ jobs:
             "${{ steps.weather.outputs.TEMP }}" \
             "${{ steps.weather.outputs.CONDITION }}" \
             "${{ steps.weather.outputs.EMOJI }}" \
+            "${{ steps.weather.outputs.TIMESTAMP }}" \
             > bento-dark.svg
 
           python3 .github/scripts/gen_bento.py light \
             "${{ steps.weather.outputs.TEMP }}" \
             "${{ steps.weather.outputs.CONDITION }}" \
             "${{ steps.weather.outputs.EMOJI }}" \
+            "${{ steps.weather.outputs.TIMESTAMP }}" \
             > bento-light.svg
 
       - name: Commit if changed

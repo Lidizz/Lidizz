@@ -11,12 +11,20 @@
 
 ---
 
+```
+lidizz@github:~$ cat about.txt
+System developer @ Statens vegvesen by day,  
+BSc student, IT & IS @ USN by nighty.
+
+lidizz@github:~$
+```
+
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)"
     srcset="https://raw.githubusercontent.com/Lidizz/Lidizz/main/bento-dark.svg" />
   <img src="https://raw.githubusercontent.com/Lidizz/Lidizz/main/bento-light.svg"
-    alt="Lidor: role, location, studying, focus"
+    alt="Oslo weather and focus areas"
     width="100%" />
 </picture>
 </div>
@@ -60,7 +68,7 @@ Developer based in Norway.
 Enjoying the process of learning and the humbling realisations that come with it.
 
 Student outside work, currently focusing on `AI` and `ML` at USN with focus on NLP and applied ML.  
-I like comparing models and learn their tradeoffs.
+I like comparing models and learning their tradeoffs.
 
 If something in my repos is useful to you, I'd be happy to know :)
 
@@ -70,7 +78,7 @@ If something in my repos is useful to you, I'd be happy to know :)
 <summary><b>⬡ &nbsp;Want to collaborate</b></summary>
 <br>
 
-Open to working on things when i get some free time.
+Open to working on things when I get some free time.
 
 Things I'd enjoy: `backend tooling` · `systems problems` · `applied ML`.  
 But open for new things, so feel free to reach out.

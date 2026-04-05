@@ -1,24 +1,101 @@
-"""
-.github/scripts/gen_bento.py
-
-Generates bento-dark.svg or bento-light.svg with live weather data.
-
-Usage (called by GitHub Action):
-    python3 gen_bento.py <theme> <temp> <condition> <emoji> > bento-<theme>.svg
-
-Usage (local placeholder generation):
-    python3 gen_bento.py
-    → writes bento-dark.svg and bento-light.svg with placeholder data
-"""
-
 import sys
 
+# ── EMOJI MAP ─────────────────────────────────────────────────
+# Single emojis only — no doubles
+# Condition text comes separately so emoji doesn't need to carry full meaning
+EMOJI_MAP = {
+    "clearsky_day":            "☀️",
+    "clearsky_night":          "🌙",
+    "clearsky_polartwilight":  "🌅",
+    "fair_day":                "🌤️",
+    "fair_night":              "🌙",
+    "partlycloudy_day":        "⛅",
+    "partlycloudy_night":      "🌙",
+    "cloudy":                  "☁️",
+    "fog":                     "🌫️",
+    "lightfog":                "🌫️",
+    "lightrainshowers_day":    "🌦️",
+    "lightrainshowers_night":  "🌧️",
+    "rainshowers_day":         "🌧️",
+    "rainshowers_night":       "🌧️",
+    "heavyrainshowers_day":    "🌧️",
+    "heavyrainshowers_night":  "🌧️",
+    "lightrain":               "🌦️",
+    "rain":                    "🌧️",
+    "heavyrain":               "🌧️",
+    "lightsleetshowers_day":   "🌨️",
+    "lightsleetshowers_night": "🌨️",
+    "sleetshowers_day":        "🌨️",
+    "sleetshowers_night":      "🌨️",
+    "lightsleet":              "🌨️",
+    "sleet":                   "🌨️",
+    "lightsnowshowers_day":    "🌨️",
+    "lightsnowshowers_night":  "❄️",
+    "snowshowers_day":         "🌨️",
+    "snowshowers_night":       "❄️",
+    "lightsnow":               "❄️",
+    "snow":                    "❄️",
+    "heavysnow":               "❄️",
+    "thunder":                 "⛈️",
+    "rainandthunder":          "⛈️",
+    "lightrainandthunder":     "⛈️",
+    "heavyrainandthunder":     "⛈️",
+    "sleetandthunder":         "⛈️",
+    "snowandthunder":          "⛈️",
+    "lightrainshowersandthunder_day":   "⛈️",
+    "lightrainshowersandthunder_night": "⛈️",
+}
 
-def make_svg(theme, temp="--°C", condition="Loading...", emoji="🌡️"):
+def symbol_to_emoji(symbol):
+    emoji = EMOJI_MAP.get(symbol)
+    if not emoji:
+        # strip _day/_night/_polartwilight and try base
+        base = symbol.replace("_day","").replace("_night","").replace("_polartwilight","")
+        emoji = EMOJI_MAP.get(base, "🌡️")
+    return emoji
+
+def symbol_to_condition(symbol):
+    """Convert symbol_code to readable condition with proper spacing."""
+    base = symbol.replace("_day","").replace("_night","").replace("_polartwilight","")
+    # insert spaces before capitals isn't needed — use replacement dict
+    COND_MAP = {
+        "clearsky":        "Clear sky",
+        "fair":            "Fair",
+        "partlycloudy":    "Partly cloudy",
+        "cloudy":          "Cloudy",
+        "fog":             "Fog",
+        "lightfog":        "Light fog",
+        "lightrain":       "Light rain",
+        "rain":            "Rain",
+        "heavyrain":       "Heavy rain",
+        "lightrainshowers":"Light showers",
+        "rainshowers":     "Showers",
+        "heavyrainshowers":"Heavy showers",
+        "lightsleet":      "Light sleet",
+        "sleet":           "Sleet",
+        "lightsleetshowers":"Light sleet showers",
+        "sleetshowers":    "Sleet showers",
+        "lightsnow":       "Light snow",
+        "snow":            "Snow",
+        "heavysnow":       "Heavy snow",
+        "lightsnowshowers":"Light snow showers",
+        "snowshowers":     "Snow showers",
+        "thunder":         "Thunder",
+        "rainandthunder":  "Rain and thunder",
+        "lightrainandthunder": "Light rain, thunder",
+        "heavyrainandthunder": "Heavy rain, thunder",
+        "sleetandthunder": "Sleet and thunder",
+        "snowandthunder":  "Snow and thunder",
+        "lightrainshowersandthunder": "Showers and thunder",
+    }
+    return COND_MAP.get(base, base.replace("and"," and ").capitalize())
+
+# ── SVG GENERATOR ─────────────────────────────────────────────
+def make_svg(theme, temp="--°C", condition="Loading...", emoji="🌡️", timestamp="--:-- UTC"):
     dark  = theme == "dark"
     bg    = "#0d1117" if dark else "#ffffff"
     bg2   = "#161b22" if dark else "#f6f8fa"
-    bg3   = "#1c2128" if dark else "#eaeef2"
+    bg3   = "#21262d" if dark else "#eaeef2"
     bdr   = "#30363d" if dark else "#d0d7de"
     t1    = "#e6edf3" if dark else "#1f2328"
     t2    = "#8b949e" if dark else "#57606a"
@@ -30,16 +107,22 @@ def make_svg(theme, temp="--°C", condition="Loading...", emoji="🌡️"):
 
     W, GAP, PAD = 640, 10, 14
     CW  = (W - GAP) // 2
-    H1  = 92   # top row
-    H2  = 82   # middle row
-    H3  = 56   # weather row
-    TH  = PAD + H1 + GAP + H2 + GAP + H3 + PAD
+    H1  = 80   # weather cell
+    H2  = 80   # focus cell
+    TH  = PAD + H1 + PAD
+
+    # Emoji width detection — some emoji are wider (flag, double-width)
+    # We use a fixed offset approach: emoji x=PAD, temp starts at PAD+34
+    EMOJI_X   = PAD
+    TEMP_X    = PAD + 34   # consistent gap after emoji regardless of width
 
     def rect(x, y, w, h, fill=bg2, stroke=bdr, rx=8):
         return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}" stroke="{stroke}" stroke-width="0.5"/>'
 
-    def txt(x, y, content, fill, size=10, weight="normal", spacing="0"):
-        return f'<text x="{x}" y="{y}" font-family="monospace" font-size="{size}" fill="{fill}" font-weight="{weight}" letter-spacing="{spacing}">{content}</text>'
+    def txt(x, y, content, fill, size=10, weight="normal", spacing="0", anchor="start"):
+        return (f'<text x="{x}" y="{y}" font-family="monospace" font-size="{size}" '
+                f'fill="{fill}" font-weight="{weight}" letter-spacing="{spacing}" '
+                f'text-anchor="{anchor}">{content}</text>')
 
     def bar(x, y, total, filled, fill):
         return (
@@ -47,62 +130,37 @@ def make_svg(theme, temp="--°C", condition="Loading...", emoji="🌡️"):
             f'<rect x="{x}" y="{y}" width="{filled}" height="4" rx="2" fill="{fill}"/>'
         )
 
-    r1y = PAD
-    r2y = PAD + H1 + GAP
-    r3y = PAD + H1 + GAP + H2 + GAP
-    BW  = CW - PAD*2 - 52
+    BW = CW - PAD*2 - 50   # bar track width
 
-    # vertical separator x position in weather cell
-    SEP_X = PAD + 140
+    # Row y positions
+    ry = PAD
 
     parts = [
         f'<svg width="{W}" height="{TH}" viewBox="0 0 {W} {TH}" xmlns="http://www.w3.org/2000/svg">',
-        f'<rect width="{W}" height="{TH}" rx="12" fill="{bg}"/>',
+        f'<rect width="{W}" height="{TH}" rx="10" fill="{bg}"/>',
 
-        # ── Cell 1: ROLE ─────────────────────────────────────
-        rect(0, r1y, CW, H1),
-        txt(PAD, r1y+20, "ROLE", t3, size=9, spacing="2"),
-        f'<circle cx="{CW-PAD}" cy="{r1y+16}" r="4" fill="{green}"/>',
-        txt(PAD, r1y+42, "Systems", t1, size=14, weight="600"),
-        txt(PAD, r1y+60, "Developer", green, size=14, weight="600"),
-        txt(PAD, r1y+H1-10, "@ Statens vegvesen", t2, size=10),
+        # ── WEATHER CELL (left) ───────────────────────────────
+        rect(0, ry, CW, H1),
+        txt(PAD, ry+18, "WEATHER  ·  OSLO", t3, size=9, spacing="2"),
+        # emoji — fixed position
+        txt(EMOJI_X, ry+50, emoji, t1, size=20),
+        # temp — fixed offset from emoji
+        txt(TEMP_X, ry+50, temp, amber, size=19, weight="600"),
+        # condition on second line
+        txt(PAD, ry+H1-10, condition, t2, size=10),
 
-        # ── Cell 2: LOCATION ─────────────────────────────────
-        rect(CW+GAP, r1y, CW, H1),
-        txt(CW+GAP+PAD, r1y+20, "LOCATION", t3, size=9, spacing="2"),
-        txt(CW+GAP+PAD, r1y+52, "Norway", t1, size=16, weight="600"),
-        txt(CW+GAP+PAD, r1y+H1-10, "59.9 N  ·  UTC+1", t2, size=10),
+        # ── FOCUS CELL (right) ───────────────────────────────
+        rect(CW+GAP, ry, CW, H2),
+        txt(CW+GAP+PAD, ry+18, "FOCUS", t3, size=9, spacing="2"),
+        txt(CW+GAP+PAD, ry+34, "backend", t2, size=9),
+        bar(CW+GAP+PAD+50, ry+29, BW, int(BW*.88), green),
+        txt(CW+GAP+PAD, ry+50, "infra", t2, size=9),
+        bar(CW+GAP+PAD+50, ry+45, BW, int(BW*.75), blue),
+        txt(CW+GAP+PAD, ry+66, "AI/ML", t2, size=9),
+        bar(CW+GAP+PAD+50, ry+61, BW, int(BW*.55), purp),
 
-        # ── Cell 3: STUDYING ─────────────────────────────────
-        rect(0, r2y, CW, H2),
-        txt(PAD, r2y+20, "STUDYING", t3, size=9, spacing="2"),
-        txt(PAD, r2y+42, "BSc IT &amp; IS", blue, size=13, weight="600"),
-        txt(PAD, r2y+H2-10, "@ USN, Norway", t2, size=10),
-
-        # ── Cell 4: FOCUS ────────────────────────────────────
-        rect(CW+GAP, r2y, CW, H2),
-        txt(CW+GAP+PAD, r2y+20, "FOCUS", t3, size=9, spacing="2"),
-        txt(CW+GAP+PAD, r2y+36, "backend", t2, size=9),
-        bar(CW+GAP+PAD+52, r2y+31, BW, int(BW*.88), green),
-        txt(CW+GAP+PAD, r2y+52, "infra", t2, size=9),
-        bar(CW+GAP+PAD+52, r2y+47, BW, int(BW*.75), blue),
-        txt(CW+GAP+PAD, r2y+68, "AI/ML", t2, size=9),
-        bar(CW+GAP+PAD+52, r2y+63, BW, int(BW*.55), purp),
-
-        # ── Cell 5: WEATHER (full width) ─────────────────────
-        rect(0, r3y, W, H3),
-        txt(PAD, r3y+20, "WEATHER", t3, size=9, spacing="2"),
-        # emoji
-        txt(PAD, r3y+46, emoji, t1, size=22),
-        # temperature
-        txt(PAD+38, r3y+46, temp, amber, size=20, weight="600"),
-        # vertical separator
-        f'<line x1="{SEP_X}" y1="{r3y+14}" x2="{SEP_X}" y2="{r3y+H3-8}" '
-        f'stroke="{bdr}" stroke-width="0.5"/>',
-        # condition
-        txt(SEP_X+14, r3y+34, condition, t1, size=12, weight="600"),
-        # location + update cadence
-        txt(SEP_X+14, r3y+50, "Oslo, Norway  ·  updated hourly", t2, size=10),
+        # timestamp bottom-right of weather cell
+        txt(CW-PAD, ry+H1-10, f"updated {timestamp}", t3, size=9, anchor="end"),
 
         '</svg>'
     ]
@@ -110,14 +168,19 @@ def make_svg(theme, temp="--°C", condition="Loading...", emoji="🌡️"):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) >= 5:
-        # Called by GitHub Action: theme temp condition emoji
-        print(make_svg(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]))
+    if len(sys.argv) >= 6:
+        # Called by Action: theme temp condition emoji timestamp
+        theme, temp, condition, emoji, timestamp = sys.argv[1:6]
+        print(make_svg(theme, temp, condition, emoji, timestamp))
+    elif len(sys.argv) >= 5:
+        # Called by Action without timestamp (backwards compat)
+        theme, temp, condition, emoji = sys.argv[1:5]
+        print(make_svg(theme, temp, condition, emoji))
     else:
-        # Local: generate placeholder SVGs for both themes
-        for theme in ["dark", "light"]:
+        # Local placeholder generation
+        for theme in ["dark","light"]:
             svg = make_svg(theme)
-            path = f"bento-{theme}.svg"
-            with open(path, "w", encoding="utf-8") as f:
+            with open(f"/mnt/user-data/outputs/bento-{theme}.svg","w",encoding="utf-8") as f:
                 f.write(svg)
-            print(f"Written: {path}")
+            print(f"Written: bento-{theme}.svg")
+

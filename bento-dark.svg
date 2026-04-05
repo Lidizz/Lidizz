@@ -1,32 +1,17 @@
-<svg width="640" height="278" viewBox="0 0 640 278" xmlns="http://www.w3.org/2000/svg">
-<rect width="640" height="278" rx="12" fill="#0d1117"/>
-<rect x="0" y="14" width="315" height="92" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
-<text x="14" y="34" font-family="monospace" font-size="9" fill="#484f58" font-weight="normal" letter-spacing="2">ROLE</text>
-<circle cx="301" cy="30" r="4" fill="#39d353"/>
-<text x="14" y="56" font-family="monospace" font-size="14" fill="#e6edf3" font-weight="600" letter-spacing="0">Systems</text>
-<text x="14" y="74" font-family="monospace" font-size="14" fill="#39d353" font-weight="600" letter-spacing="0">Developer</text>
-<text x="14" y="96" font-family="monospace" font-size="10" fill="#8b949e" font-weight="normal" letter-spacing="0">@ Statens vegvesen</text>
-<rect x="325" y="14" width="315" height="92" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
-<text x="339" y="34" font-family="monospace" font-size="9" fill="#484f58" font-weight="normal" letter-spacing="2">LOCATION</text>
-<text x="339" y="66" font-family="monospace" font-size="16" fill="#e6edf3" font-weight="600" letter-spacing="0">Norway</text>
-<text x="339" y="96" font-family="monospace" font-size="10" fill="#8b949e" font-weight="normal" letter-spacing="0">59.9 N  ·  UTC+1</text>
-<rect x="0" y="116" width="315" height="82" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
-<text x="14" y="136" font-family="monospace" font-size="9" fill="#484f58" font-weight="normal" letter-spacing="2">STUDYING</text>
-<text x="14" y="158" font-family="monospace" font-size="13" fill="#58a6ff" font-weight="600" letter-spacing="0">BSc IT &amp; IS</text>
-<text x="14" y="188" font-family="monospace" font-size="10" fill="#8b949e" font-weight="normal" letter-spacing="0">@ USN, Norway</text>
-<rect x="325" y="116" width="315" height="82" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
-<text x="339" y="136" font-family="monospace" font-size="9" fill="#484f58" font-weight="normal" letter-spacing="2">FOCUS</text>
-<text x="339" y="152" font-family="monospace" font-size="9" fill="#8b949e" font-weight="normal" letter-spacing="0">backend</text>
-<rect x="391" y="147" width="235" height="4" rx="2" fill="#1c2128"/><rect x="391" y="147" width="206" height="4" rx="2" fill="#39d353"/>
-<text x="339" y="168" font-family="monospace" font-size="9" fill="#8b949e" font-weight="normal" letter-spacing="0">infra</text>
-<rect x="391" y="163" width="235" height="4" rx="2" fill="#1c2128"/><rect x="391" y="163" width="176" height="4" rx="2" fill="#58a6ff"/>
-<text x="339" y="184" font-family="monospace" font-size="9" fill="#8b949e" font-weight="normal" letter-spacing="0">AI/ML</text>
-<rect x="391" y="179" width="235" height="4" rx="2" fill="#1c2128"/><rect x="391" y="179" width="129" height="4" rx="2" fill="#bc8cff"/>
-<rect x="0" y="208" width="640" height="56" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
-<text x="14" y="228" font-family="monospace" font-size="9" fill="#484f58" font-weight="normal" letter-spacing="2">WEATHER</text>
-<text x="14" y="254" font-family="monospace" font-size="22" fill="#e6edf3" font-weight="normal" letter-spacing="0">☁️</text>
-<text x="52" y="254" font-family="monospace" font-size="20" fill="#e6db74" font-weight="600" letter-spacing="0">6°C</text>
-<line x1="154" y1="222" x2="154" y2="256" stroke="#30363d" stroke-width="0.5"/>
-<text x="168" y="242" font-family="monospace" font-size="12" fill="#e6edf3" font-weight="600" letter-spacing="0">Cloudy</text>
-<text x="168" y="258" font-family="monospace" font-size="10" fill="#8b949e" font-weight="normal" letter-spacing="0">Oslo, Norway  ·  updated hourly</text>
+<svg width="640" height="108" viewBox="0 0 640 108" xmlns="http://www.w3.org/2000/svg">
+<rect width="640" height="108" rx="10" fill="#0d1117"/>
+<rect x="0" y="14" width="315" height="80" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
+<text x="14" y="32" font-family="monospace" font-size="9" fill="#484f58" font-weight="normal" letter-spacing="2" text-anchor="start">WEATHER  ·  OSLO</text>
+<text x="14" y="64" font-family="monospace" font-size="20" fill="#e6edf3" font-weight="normal" letter-spacing="0" text-anchor="start">🌡️</text>
+<text x="48" y="64" font-family="monospace" font-size="19" fill="#e6db74" font-weight="600" letter-spacing="0" text-anchor="start">--°C</text>
+<text x="14" y="84" font-family="monospace" font-size="10" fill="#8b949e" font-weight="normal" letter-spacing="0" text-anchor="start">Loading...</text>
+<rect x="325" y="14" width="315" height="80" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
+<text x="339" y="32" font-family="monospace" font-size="9" fill="#484f58" font-weight="normal" letter-spacing="2" text-anchor="start">FOCUS</text>
+<text x="339" y="48" font-family="monospace" font-size="9" fill="#8b949e" font-weight="normal" letter-spacing="0" text-anchor="start">backend</text>
+<rect x="389" y="43" width="237" height="4" rx="2" fill="#21262d"/><rect x="389" y="43" width="208" height="4" rx="2" fill="#39d353"/>
+<text x="339" y="64" font-family="monospace" font-size="9" fill="#8b949e" font-weight="normal" letter-spacing="0" text-anchor="start">infra</text>
+<rect x="389" y="59" width="237" height="4" rx="2" fill="#21262d"/><rect x="389" y="59" width="177" height="4" rx="2" fill="#58a6ff"/>
+<text x="339" y="80" font-family="monospace" font-size="9" fill="#8b949e" font-weight="normal" letter-spacing="0" text-anchor="start">AI/ML</text>
+<rect x="389" y="75" width="237" height="4" rx="2" fill="#21262d"/><rect x="389" y="75" width="130" height="4" rx="2" fill="#bc8cff"/>
+<text x="301" y="84" font-family="monospace" font-size="9" fill="#484f58" font-weight="normal" letter-spacing="0" text-anchor="end">updated --:-- UTC</text>
 </svg>
