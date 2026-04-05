@@ -16,6 +16,7 @@ def make_terminal(theme, temp="--°C", condition="Loading...", emoji="🌡️", 
     green_c   = "#39d353" if dark else "#2da44e"
     blue_c    = "#58a6ff" if dark else "#0969da"
     purple_c  = "#bc8cff" if dark else "#8250df"
+    orange_c  = "#ffa657" if dark else "#bc4c00"
     key_c     = "#79c0ff" if dark else "#0550ae"
     val_c     = "#a5d6ff" if dark else "#0a3069"
     dim_c     = "#484f58" if dark else "#afb8c1"
@@ -36,8 +37,8 @@ def make_terminal(theme, temp="--°C", condition="Loading...", emoji="🌡️", 
         # types: prompt, blank, out
         ("prompt", [("prompt", "lidizz@github"), ("dim", ":"), ("path", "~"), ("dim", "$ "), ("cmd", "cat about.txt")]),
         ("out",    [("out", "Systems Developer "), ("green", "@ "), ("orange", "Statens vegvesen.")]),
-        ("out",    [("out", "IT & IS student "), ("green", "@ "), ("purple", "USN, "), ("out", "Norway.")]),
-        ("out",    [("out", "Experimenting with "), ("purple", "AI/ML"), ("out", " \u2014 one humbling mistake at a time.")]),
+        ("out",    [("blue", "IT & IS student "), ("green", "@ "), ("purple", "USN, "), ("out", "Norway.")]),
+        ("out",    [("out", "Experimenting with "), ("blue", "AI/ML"), ("out", " in my free time.")]),
         ("blank",  []),
         ("prompt", [("prompt", "lidizz@github"), ("dim", ":"), ("path", "~"), ("dim", "$ "), ("cmd", "cat status.json")]),
         ("out",    [("out", "{")]),
@@ -54,7 +55,7 @@ def make_terminal(theme, temp="--°C", condition="Loading...", emoji="🌡️", 
     COLOR = {
         "prompt": prompt, "path": path_c, "cmd": cmd_c,
         "out": out_c, "hl": hl_c, "green": green_c,
-        "blue": blue_c, "purple": purple_c,
+        "blue": blue_c, "purple": purple_c, "orange": orange_c,
         "key": key_c, "val": val_c, "dim": dim_c,
     }
 
