@@ -36,9 +36,9 @@ def make_terminal(theme, temp="--°C", condition="Loading...", emoji="🌡️", 
         # (type, segments)
         # types: prompt, blank, out
         ("prompt", [("prompt", "lidizz@github"), ("dim", ":"), ("path", "~"), ("dim", "$ "), ("cmd", "cat about.txt")]),
-        ("out",    [("out", "Systems Developer "), ("out", "@ "), ("orange", "Statens vegvesen.")]),
-        ("out",    [("out", "IT & IS student "), ("out", "@ "), ("purple", "USN, "), ("out", "Norway.")]),
-        ("out",    [("out", "Experimenting with "), ("out", "AI/ML"), ("out", " in my free time.")]),
+        ("out",    [("out", "Systems Developer "), ("out", "@ "), ("orange", "Statens vegvesen")]),
+        ("out",    [("out", "IT & IS student "), ("out", "@ "), ("purple", "USN"), ("out", ", Norway")]),
+        ("out",    [("out", "Experimenting with "), ("out", "AI/ML"), ("out", " in my free time")]),
         ("blank",  []),
         ("prompt", [("prompt", "lidizz@github"), ("dim", ":"), ("path", "~"), ("dim", "$ "), ("cmd", "cat status.json")]),
         ("out",    [("out", "{")]),
