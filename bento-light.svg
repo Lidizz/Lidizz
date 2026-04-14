@@ -3,7 +3,7 @@
 <rect x="0" y="14" width="315" height="80" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="0.5"/>
 <text x="14" y="32" font-family="monospace" font-size="9" fill="#afb8c1" font-weight="normal" letter-spacing="2" text-anchor="start">WEATHER  ·  OSLO</text>
 <text x="14" y="64" font-family="monospace" font-size="20" fill="#1f2328" font-weight="normal" letter-spacing="0" text-anchor="start">☁️</text>
-<text x="48" y="64" font-family="monospace" font-size="19" fill="#9a6700" font-weight="600" letter-spacing="0" text-anchor="start">9°C</text>
+<text x="48" y="64" font-family="monospace" font-size="19" fill="#9a6700" font-weight="600" letter-spacing="0" text-anchor="start">8°C</text>
 <text x="14" y="84" font-family="monospace" font-size="10" fill="#57606a" font-weight="normal" letter-spacing="0" text-anchor="start">Cloudy</text>
 <rect x="325" y="14" width="315" height="80" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="0.5"/>
 <text x="339" y="32" font-family="monospace" font-size="9" fill="#afb8c1" font-weight="normal" letter-spacing="2" text-anchor="start">FOCUS</text>
@@ -13,5 +13,5 @@
 <rect x="389" y="59" width="237" height="4" rx="2" fill="#eaeef2"/><rect x="389" y="59" width="177" height="4" rx="2" fill="#0969da"/>
 <text x="339" y="80" font-family="monospace" font-size="9" fill="#57606a" font-weight="normal" letter-spacing="0" text-anchor="start">AI/ML</text>
 <rect x="389" y="75" width="237" height="4" rx="2" fill="#eaeef2"/><rect x="389" y="75" width="130" height="4" rx="2" fill="#8250df"/>
-<text x="301" y="84" font-family="monospace" font-size="9" fill="#afb8c1" font-weight="normal" letter-spacing="0" text-anchor="end">updated 23:35 UTC</text>
+<text x="301" y="84" font-family="monospace" font-size="9" fill="#afb8c1" font-weight="normal" letter-spacing="0" text-anchor="end">updated 01:50 UTC</text>
 </svg>
